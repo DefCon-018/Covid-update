@@ -83,7 +83,7 @@ td {
 .country-details {
   background-color: #fdf6e3;
   width: 100%;
-  height: 93vh;
+  padding-bottom: 40px;
 }
 
 img {
@@ -136,7 +136,7 @@ h1 {
   font-size: 2rem;
 }
 
-.details {
+.details-card {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -145,4 +145,31 @@ h1 {
 .country-name {
   text-align: center;
   padding: 30px 0px;
+}
+
+.loading {
+  text-align: center;
+}
+
+.btn {
+  padding: 10px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: darkblue;
+  width: 100%;
+  margin: auto;
+  cursor: pointer;
+}
+.button {
+  width: 20%;
+  margin: 20px auto;
+}
+.green {
+  background-color: green;
+}
+
+.history-table {
+  width: 80%;
+  margin: auto;
 }
