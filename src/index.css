@@ -77,3 +77,72 @@ td {
 .green {
   background-color: lightgreen;
 }
+
+/* detail of individual country */
+
+.country-details {
+  background-color: #fdf6e3;
+  width: 100%;
+  height: 93vh;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.flag-image {
+  width: 10%;
+  padding-top: 20px;
+}
+h1 {
+  font-family: sans-serif;
+}
+.country-name {
+  padding: 0px 20px;
+}
+
+.card {
+  width: 300px;
+  height: 200px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0.4px lightgray;
+  margin: 20px 0px;
+}
+
+.total-number {
+  color: darkblue;
+  font-family: sans-serif;
+  padding: 20px 20px;
+}
+.card h2 {
+  color: darkblue;
+  padding: 5px 10px;
+  text-align: center;
+}
+.card h1 {
+  margin-left: 20px;
+}
+
+.new-cases {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.count {
+  font-size: 2rem;
+}
+
+.details {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.country-name {
+  text-align: center;
+  padding: 30px 0px;
+}

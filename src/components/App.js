@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import CountryList from './CountryList';
 import Navbar from './Navbar';
+import Country from './Country';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
@@ -21,7 +22,16 @@ function App() {
     <Router>
       <div className="App">
         <Navbar />
-        <CountryList countries={data} />
+        <Switch>
+          <Route
+            path="/"
+            exact
+            render={(props) => {
+              return <CountryList {...props} countries={data} />;
+            }}
+          />
+          <Route path="/:country" component={Country}></Route>
+        </Switch>
       </div>
     </Router>
   );

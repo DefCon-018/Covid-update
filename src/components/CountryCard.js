@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-class Country extends React.Component {
+class CountryCard extends React.Component {
   render() {
     let { country } = this.props;
     return (
@@ -22,4 +22,4 @@ class Country extends React.Component {
   }
 }
 
-export default Country;
+export default CountryCard;
