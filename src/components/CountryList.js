@@ -1,5 +1,5 @@
 import React from 'react';
-import Country from './Country';
+import CountryCard from './CountryCard';
 
 class CountryList extends React.Component {
   render() {
@@ -13,9 +13,9 @@ class CountryList extends React.Component {
           </div>
           <div>
             <table className="table">
-              <tr>
+              <tr className="detail-head">
                 <td>Location</td>
-                <td>Cases</td>
+                <td>Total Cases</td>
                 <td>New Cases</td>
                 <td>Active Cases</td>
                 <td>Total Deaths</td>
@@ -25,7 +25,7 @@ class CountryList extends React.Component {
                 <td>Population</td>
               </tr>
               {countries.map((country) => {
-                return <Country country={country} />;
+                return <CountryCard country={country} />;
               })}
             </table>
           </div>

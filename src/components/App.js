@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import CountryList from './CountryList';
 import Navbar from './Navbar';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
   let dataState = useState([]);
@@ -17,10 +18,12 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <Navbar />
-      <CountryList countries={data} />
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <CountryList countries={data} />
+      </div>
+    </Router>
   );
 }
 

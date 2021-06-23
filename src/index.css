@@ -28,7 +28,7 @@ table {
 }
 
 .nav {
-  background-color: red;
+  background-color: white;
   padding: 10px;
 }
 
@@ -61,4 +61,19 @@ tr {
 }
 td {
   padding: 15px;
+}
+
+.detail-head {
+  background-color: #f2f2f2;
+}
+.detail-head td {
+  font-weight: 600;
+}
+
+.red {
+  background-color: red;
+  color: white;
+}
+.green {
+  background-color: lightgreen;
 }
