@@ -4,7 +4,6 @@ import CountryCard from './CountryCard';
 class CountryList extends React.Component {
   render() {
     let { countries } = this.props;
-    console.log(this.props);
     return (
       <div className="country-list">
         <div className="details">
@@ -24,8 +23,8 @@ class CountryList extends React.Component {
                 <td>Continent</td>
                 <td>Population</td>
               </tr>
-              {countries.map((country) => {
-                return <CountryCard country={country} />;
+              {countries.map((country, index) => {
+                return <CountryCard country={country} key={index} />;
               })}
             </table>
           </div>

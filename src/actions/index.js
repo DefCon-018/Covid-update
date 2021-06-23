@@ -27,7 +27,6 @@ export function fetchHistoryDetail(country) {
       .then((data) => {
         console.log(data);
         let history = data.filter((d) => d.country === country);
-        console.log('ac hi', history[0].timeline);
         dispatch(getHistory(history[0].timeline));
       });
   };

@@ -25,7 +25,6 @@ class Country extends React.Component {
   }
   render() {
     let { country, history } = this.props;
-    console.log('country history', history);
     let { showHistory } = this.state;
     let array = [];
     for (let h in history.cases) {
@@ -37,7 +36,6 @@ class Country extends React.Component {
       };
       array.push(obj);
     }
-    console.log(array);
     {
       if (country.country !== this.props.match.params.country) {
         return <h1 className="loading">Loading...</h1>;
